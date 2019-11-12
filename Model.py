@@ -3,6 +3,7 @@ from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 from imblearn.over_sampling import SMOTE
 import numpy as np
+from sk
 
 column = None
 
@@ -84,6 +85,7 @@ def classify_svm(X_train,Y_train,X_test,Y_test):
     print('testing...')
     pred = clf.predict(X_test)
     acc = accuracy_score(Y_test, pred)
+    conf = metrics.confusion_matrix(Y_test, pred)
 
     return acc
 
