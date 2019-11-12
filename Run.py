@@ -3,11 +3,14 @@ from Model import *
 import sys
 import time
 
-""" from collections import Counter
+
+""" 
+This docstring is for validation of the encoded values.
+    from collections import Counter
     num_of_key = Counter()
     for k in data['Unnamed: 27']:
         num_of_key[k] += 1
-    print(num_of_key.most_common(5))
+    print(num_of_key.most_common(3))
 
 """
 
