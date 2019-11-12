@@ -17,7 +17,7 @@ def preprocess(df):
     global column
     column = df.columns
     df = df.drop(labels=column[-1], axis=1)  # I know that last column is empty, so I just removed it
-    df.loc[df['Unnamed: 27'] == '2'] = np.nan
+    df.loc[df['Unnamed: 27'] == '2'] = np.nan # I also checked a number 2 instead of NAN or Fluent in the label column which I fixed
     column = column[:-1]
     return df
 
@@ -87,6 +87,6 @@ def classify_svm(X_train,Y_train,X_test,Y_test):
     acc = accuracy_score(Y_test, pred)
     conf = metrics.confusion_matrix(Y_test, pred)
 
-    return acc
+    return acc , conf
 
 
