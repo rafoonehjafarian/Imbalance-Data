@@ -3,7 +3,7 @@ from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 from imblearn.over_sampling import SMOTE
 import numpy as np
-from sk
+from sklearn import metrics
 
 column = None
 

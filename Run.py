@@ -18,7 +18,7 @@ def main(data_file,split_pc):
     data = preprocess(data)
     data = encode(data)
     X_train, Y_train, X_test, Y_test = split_data(data, split_pc)
-    X_train, Y_train = balance_data(X_train, Y_train)
+    #X_train, Y_train = balance_data(X_train, Y_train)
     acc,conf = classify_svm(X_train, Y_train, X_test, Y_test)
     print(f'the accuracy for this model is {acc} and the confusion matrix for our model is {conf}')
     print("--- %s seconds ---" % (time.time() - start_time))
