@@ -42,7 +42,7 @@ if __name__ == "__main__":
         test_file = None
     data_file = '.\data\DataScienceChallenge.csv'
     split_pc = 0.8
-    main(data_file,split_pc,test_file)
+    main(data_file, split_pc, test_file)
 
 
 
