@@ -1,2 +1,1 @@
-# Mistplay_Challenge
- Classification for Mistplay_Challenge
+# Imbalance data classification
